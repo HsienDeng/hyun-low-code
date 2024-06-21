@@ -8,7 +8,7 @@
     <NLayout position="absolute" class="generate-flow-code-container" has-sider>
       <!--  左侧组件区域开始  -->
       <NLayoutSider class="generate-flow-code-left" content-style="padding: 10px;" :native-scrollbar="false" bordered>
-        left
+        <FormLeft />
       </NLayoutSider>
       <!--  左侧组件区域结束  -->
       <!--  中间画布区域开始  -->
@@ -28,6 +28,8 @@
 </template>
 
 <script setup lang="ts">
+  import FormLeft from './components/FormLeft/index.vue';
+
   import { useDesign } from '@/hooks/useDesign';
 
   const { prefixCls } = useDesign('generate-form');

@@ -25,7 +25,6 @@
       :native-scrollbar="false"
       bordered
       :collapsed-width="64"
-      show-trigger
       collapse-mode="width"
       @update:collapsed="(event: boolean) => (designSetting.collapsed = event)"
     >

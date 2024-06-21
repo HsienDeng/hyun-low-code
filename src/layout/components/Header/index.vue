@@ -3,7 +3,7 @@
     <!-- 左侧内容 -->
     <div :class="`${prefixCls}-content-left`">
       <div class="collapse cursor-pointer" @click="toggleCollapsed">
-        <SvgIcon :name="settingStore.collapsed ? 'menu-unfold' : 'menu-unfold-one'" />
+        <SvgIcon :name="settingStore.collapsed ? 'menu-fold' : 'menu-unfold'" />
       </div>
     </div>
     <!-- 右侧内容 -->

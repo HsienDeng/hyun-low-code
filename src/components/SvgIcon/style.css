@@ -1,0 +1,7 @@
+.svg-icon {
+  display: flex;
+}
+
+.c-icon svg use {
+  stroke: currentColor;
+}

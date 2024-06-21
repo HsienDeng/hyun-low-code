@@ -13,7 +13,7 @@ const routes = [
       {
         path: 'main',
         meta: {
-          title: '首页',
+          title: '表单生成',
           icon: 'workbench',
         },
         name: 'HomeMain',

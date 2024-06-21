@@ -47,7 +47,6 @@
 
   .@{prefix-cls} {
     &-content {
-      padding: 16px;
       height: calc(100% - 56px);
       box-sizing: border-box;
 

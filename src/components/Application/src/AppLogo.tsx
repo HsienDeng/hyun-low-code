@@ -22,7 +22,7 @@ export default defineComponent({
     return () => (
       <div class={logoClass.value}>
         <img src="/src/assets/vast.svg" alt="logo" class="w-8" />
-        {!collapsed.value && <span class="ml-2 font-bold text-xl">Hsien Low Code</span>}
+        {!collapsed.value && <span class="ml-2 font-bold text-xl">Hsien 低代码平台</span>}
       </div>
     );
   },

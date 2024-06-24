@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
 import App from './App.vue';
+import naive from 'naive-ui';
 
 import './styles/index.less';
 import 'uno.css';
@@ -12,6 +13,8 @@ import { setupAppComponent, setupEcharts } from '@/plugins';
 
 function boostrap() {
   const app = createApp(App);
+
+  app.use(naive);
 
   /* 挂载全局组件 */
   setupAppComponent(app);

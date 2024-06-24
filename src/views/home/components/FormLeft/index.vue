@@ -4,7 +4,7 @@
       <div class="left-component-title">
         <span>{{ config.title }}（{{ config.componentList.length }}）</span>
       </div>
-      <FreshDraggable
+      <Draggable
         class="dragArea list-group"
         :list="config.componentList"
         :group="{ name: 'people', pull: 'clone', put: false }"
@@ -19,13 +19,13 @@
             </div>
           </div>
         </template>
-      </FreshDraggable>
+      </Draggable>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-  import FreshDraggable from 'vuedraggable';
+  import Draggable from 'vuedraggable';
 
   import { ConfigList } from '../../config/index.ts';
 </script>

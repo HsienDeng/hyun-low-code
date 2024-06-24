@@ -17,11 +17,25 @@ export const ConfigList = ref<ConfigArray[]>([
       },
       {
         label: '按钮',
-        component: 'NAvatar',
+        component: 'NButton',
         disabled: false,
         icon: 'click-tap',
+        defaultValue: '这是一个按钮',
         componentProps: {},
       },
     ],
   },
 ]);
+
+/**
+ * 参考文档 https://www.itxst.com/sortablejs/neuinffi.html
+ */
+export const draggedProps = {
+  animation: 200,
+  group: 'people',
+  handle: '.move',
+  disabled: false,
+  ghostClass: 'ghost',
+  class: 'w-100 h-100',
+  'item-key': 'label',
+};

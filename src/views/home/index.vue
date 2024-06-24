@@ -1,13 +1,13 @@
 <template>
   <div :class="prefixCls">
-    <NLayoutHeader bordered :class="`${prefixCls}-header`">
+    <!-- <NLayoutHeader bordered :class="`${prefixCls}-header`">
       <NFlex>
         <NButton type="success"> 导出代码 </NButton>
       </NFlex>
-    </NLayoutHeader>
-    <NLayout position="absolute" class="generate-flow-code-container" has-sider>
+    </NLayoutHeader> -->
+    <NLayout position="absolute" :class="`${prefixCls}-ontainer`" has-sider>
       <!--  左侧组件区域开始  -->
-      <NLayoutSider class="generate-flow-code-left" content-style="padding: 10px;" :native-scrollbar="false" bordered>
+      <NLayoutSider content-style="padding: 10px;" :native-scrollbar="false" bordered>
         <FormLeft />
       </NLayoutSider>
       <!--  左侧组件区域结束  -->
@@ -17,7 +17,7 @@
         embedded
         :native-scrollbar="false"
       >
-        content
+        <FormContent />
       </NLayout>
       <!--  中间画布区域结束  -->
       <!--  右侧属性控制区域开始  -->
@@ -29,6 +29,7 @@
 
 <script setup lang="ts">
   import FormLeft from './components/FormLeft/index.vue';
+  import FormContent from './components/FormContent/index.vue';
 
   import { useDesign } from '@/hooks/useDesign';
 
